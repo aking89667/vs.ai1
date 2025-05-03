@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top AI Models</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .intro {
+      padding: 40px;
+      text-align: center;
+    }
+    .model-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .model-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .model-card:hover {
+      transform: scale(1.03);
+    }
+    .model-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+    footer {
+      background: #1a1a2e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top AI Models</h1>
+    <nav>
+      <ul>
+        <li><a href="#models">Models</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>Explore the Power of AI</h2>
+    <p>Click on any model below to start a conversation with it.</p>
+  </section>
+
+  <section id="models">
+    <div class="model-list">
+      <div class="model-card">
+        <a href="/chat.html?model=gpt4">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/OpenAI_Logo.svg" alt="GPT-4" />
+          <h3>GPT-4</h3>
+        </a>
+      </div>
+      <div class="model-card">
+        <a href="/chat.html?model=bert">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Google_BERT_logo.svg/512px-Google_BERT_logo.svg.png" alt="BERT" />
+          <h3>BERT</h3>
+        </a>
+      </div>
+      <div class="model-card">
+        <a href="/chat.html?model=dalle">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/DALL-E_logo.svg" alt="DALL-E" />
+          <h3>DALL·E</h3>
+        </a>
+      </div>
+      <div class="model-card">
+        <a href="/chat.html?model=stable-diffusion">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Stable_Diffusion_Logo.svg" alt="Stable Diffusion" />
+          <h3>Stable Diffusion</h3>
+        </a>
+      </div>
+      <div class="model-card">
+        <a href="/chat.html?model=whisper">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Whisper_openai_logo.svg" alt="Whisper" />
+          <h3>Whisper</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Top AI Models. All rights reserved.</p>
+  </footer>
+</body>
+</html>
